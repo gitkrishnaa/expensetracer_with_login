@@ -1,0 +1,9 @@
+.Main_div{
+   /* background-color: aquamarine; */
+   display: flex;
+   height: 80px;
+   justify-content: center;
+   align-items: center;
+}
+
+

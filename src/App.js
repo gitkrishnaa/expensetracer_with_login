@@ -1,23 +1,23 @@
 import logo from './logo.svg';
-import './App.css';
+import Styles from "./App.module.css"
+import { Navigate } from './Components';
+import { Dashboard } from './Pages';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={Styles.Main_div}>
+      {/* nav */}
+      <div className={Styles.Nav} >
+
+
+     < Navigate/>
+      </div>
+
+<div className={Styles.Page}>
+<Dashboard/>
+
+
+</div>
     </div>
   );
 }
