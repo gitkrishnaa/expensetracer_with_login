@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./Styles.module.css";
-import {IoNotificationsOutline} from "react-icons"
+
 function Main() {
   return (
     <div className={Styles.Main_div}>

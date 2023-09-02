@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import Styles from "./App.module.css"
 import { Navigate } from './Components';
-import { Dashboard } from './Pages';
+import { Dashboard,Budget,Expense,Friends,Help,Report,Setting,Todo } from './Pages';
+import {Route} from "react-router-dom"
+
+
+
+
 
 function App() {
   return (
@@ -14,9 +19,15 @@ function App() {
       </div>
 
 <div className={Styles.Page}>
-<Dashboard/>
 
-
+<Route path="/"><Dashboard/></Route>
+<Route path="dashboard"><Dashboard/></Route>
+<Route path="Expense"><Expense/></Route>
+<Route path="Budget"><Budget/></Route>
+<Route path="Friends"><Friends/></Route>
+<Route path="Todo"><Todo/></Route>
+<Route path="Report"><Report/></Route>
+<Route path="Help"><Help/></Route>
 </div>
     </div>
   );
