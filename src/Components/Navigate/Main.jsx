@@ -1,6 +1,6 @@
 import React from "react";
 import Styles from "./Styles.module.css";
-
+import {Link} from "react-router-dom"
 function Main() {
   return (
     <div className={Styles.Main_div}>
@@ -11,14 +11,13 @@ function Main() {
 
       <div className={Styles.Main_nav}>
         <ul>
-          <li>Dashboard</li>
-          <li>Expense</li>
-          <li>Budget</li>
-          <li>Friends</li>
-          <li>Todo</li>
-          <li>Report</li>
-         
-          <li>Help</li>
+          <Link to="/Dashboard"><li>Dashboard</li></Link>
+          <Link to="/Expense"><li>Expense</li></Link>
+          <Link to="/Budget"><li>Budget</li></Link>
+          <Link to="/Friends"><li>Friends</li></Link>
+          <Link to="/Todo"><li>Todo</li></Link>
+          <Link to="/Report"><li>Report</li></Link>
+          <Link to="/Help"><li>Help</li></Link>
         </ul>
       </div>
 

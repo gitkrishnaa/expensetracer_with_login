@@ -5,7 +5,7 @@ function Main() {
   return (
     <div className={Styles.Main_div}>
   
-  <Top_nav Page_name={"Expense"}/>
+  <Top_nav Page_name={"Budget"}/>
     </div>
   )
 }

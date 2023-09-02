@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import Styles from "./App.module.css"
 import { Navigate } from './Components';
 import { Dashboard,Budget,Expense,Friends,Help,Report,Setting,Todo } from './Pages';
-import {Route} from "react-router-dom"
+import {Route,Switch} from "react-router-dom"
 
 
 
@@ -19,15 +19,16 @@ function App() {
       </div>
 
 <div className={Styles.Page}>
-
-<Route path="/"><Dashboard/></Route>
-<Route path="dashboard"><Dashboard/></Route>
-<Route path="Expense"><Expense/></Route>
-<Route path="Budget"><Budget/></Route>
-<Route path="Friends"><Friends/></Route>
-<Route path="Todo"><Todo/></Route>
-<Route path="Report"><Report/></Route>
-<Route path="Help"><Help/></Route>
+<Switch>
+<Route exact path="/"><Dashboard/></Route>
+<Route exact path="/dashboard"><Dashboard/></Route>
+<Route exact path="/Expense"><Expense/></Route>
+<Route exact path="/Budget"><Budget/></Route>
+<Route exact path="/Friends"><Friends/></Route>
+<Route exact path="/Todo"><Todo/></Route>
+<Route exact path="/Report"><Report/></Route>
+<Route exact path="/Help"><Help/></Route>
+</Switch>
 </div>
     </div>
   );
