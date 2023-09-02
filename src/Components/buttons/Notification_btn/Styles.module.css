@@ -12,4 +12,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease-in-out;
 }
+.icons_button:hover{
+    transform: scale(1.2);
+    background-color:var(--top_nav_hover_color);
+ }

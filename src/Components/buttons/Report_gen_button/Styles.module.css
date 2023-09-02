@@ -24,6 +24,8 @@ height: 19px;
 }
 .full_btn:hover,.icon_btn:hover{
    background-color:var(--top_nav_hover_color);
+transform: scale(1.2);
+
 }
 .icon_btn{
    background-color: var(--boxcolor); 
