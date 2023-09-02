@@ -8,13 +8,11 @@ function Main() {
 //  console.log(input.current)
   const [serchicon,setSeachicon]=useState();
 
-const sizehandler=()=>{
-console.log("hello")
-}
+
 
   return (
     <div className={Styles.Main_div}>
-  <input ref={input} type="text"  placeholder={`Search`} onClick={sizehandler} onLoad={sizehandler}/>
+  <input ref={input} type="text"  placeholder={`Search`} />
 
     </div>
   )

@@ -4,7 +4,7 @@
     justify-content: center;
 
 }
-input{ 
+.Main_div>input{ 
       background-color: var(--boxcolor); 
     width: 90%;
     min-width: 100px;
