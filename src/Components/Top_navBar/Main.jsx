@@ -1,30 +1,27 @@
 import React from "react";
 import Styles from "./Styles.module.css";
-import { SearchBar } from "..";
+
+import DesktopViewTop_nav from "./DesktopView1536px/Main"
+import MobileViewTop_nav from "./MobileView500px/Main"
+import TabletViewTop_nav from "./TabletView650_1300px/Main"
+import TabletViewTop_nav2 from "./TabletView500_650px/Main"
 
 function Main(props) {
   return (
     <div className={Styles.Main_div}>
-   
-{/* page name */}
+      {/* page name */}
       <div className={Styles.Page_name}>{props.Page_name}</div>
+      <div className={Styles.tabs}>
 
-      <div className={Styles.add_btn}>add_btn</div>
+<div  className={Styles.desktop_nav}><DesktopViewTop_nav/></div>
+<div  className={Styles.tablet_nav}><TabletViewTop_nav/></div>
+<div  className={Styles.tablet_nav2}><TabletViewTop_nav2/></div>
 
-{/* search */}
-      <div className={Styles.xyz}>
-      <SearchBar/>
-      </div>
+{/* <div><DesktopViewTop_nav/></div> */}
+       </div>
 
-{/* icons */}
-      <div className={Styles.icons_button}>
       
-      </div> 
-
-
     </div>
-
-
   );
 }
 

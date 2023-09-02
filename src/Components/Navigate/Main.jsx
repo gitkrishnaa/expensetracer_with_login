@@ -1,5 +1,6 @@
 import React from "react";
 import Styles from "./Styles.module.css";
+import {IoNotificationsOutline} from "react-icons"
 function Main() {
   return (
     <div className={Styles.Main_div}>
@@ -24,8 +25,8 @@ function Main() {
 
       <div className={Styles.footer_nav}>
         <ul>
-        <li>Setting</li>
-          <li>Logout</li>
+        <li onClick={()=>{alert(`width-${window.innerWidth} || height ${window.innerHeight}`)}}>Setting</li>
+          <li >Logout</li>
         </ul>
         
       </div> 

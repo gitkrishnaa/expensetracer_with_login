@@ -1,0 +1,47 @@
+
+
+
+.tabs{
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: end;
+    padding: 30px;
+    
+
+}
+.add_btn{
+    width: 50%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: end;
+}
+.add_btn>div{
+  margin: 0px 5px;
+}
+
+
+
+.SearchBar{
+    /* background-color: aqua; */
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    /* margin: 0px 20px; */
+}
+.icons_button{
+    background-color: var(--boxcolor); 
+    /* background-color: antiquewhite; */
+    /* min-width: 100px; */
+    border: none;
+    width: 38px;
+    height: 38px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

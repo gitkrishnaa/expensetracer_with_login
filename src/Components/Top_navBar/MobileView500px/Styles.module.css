@@ -1,0 +1,59 @@
+.Main_div{
+   /* background-color: aquamarine; */
+   display: flex;
+   height: 80px;
+   justify-content: center;
+   align-items: center;
+}
+
+.Page_name{
+    padding: 30px;
+    width: 30%;
+    /* background-color: aquamarine; */
+}
+.tabs{
+    width: 70%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: end;
+    padding: 30px;
+
+}
+.add_btn{
+    width: 50%;
+    /* background-color: blanchedalmond; */
+    display: flex;
+    justify-content: end;
+}
+.add_btn>div{
+  margin: 0px 5px;
+}
+.add_btn_yablet_view{
+    width: 10%;
+    /* background-color: aqua; */
+}
+
+
+.SearchBar{
+    /* background-color: aqua; */
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    margin: 0px 20px;
+}
+.icons_button{
+    background-color: var(--boxcolor); 
+    /* background-color: antiquewhite; */
+    /* min-width: 100px; */
+    border: none;
+    width: 38px;
+    height: 38px;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

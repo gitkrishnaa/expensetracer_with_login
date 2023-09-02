@@ -4,6 +4,59 @@
    height: 80px;
    justify-content: center;
    align-items: center;
+   transition: 0.3s ease-in-out;
 }
 
+.Page_name{
+    padding: 30px;
+    width: 30%;
+    /* background-color: aquamarine; */
+}
+.tabs{
+    width: 70%;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: end;
+    /* padding: 30px; */
+    flex-direction: column;
 
+}
+
+@media screen and (min-width: 500px) and (max-width:650px) {
+    .tabs{
+      /* background-color: lightgreen; */
+    }
+    .desktop_nav{
+     display: none;
+    }
+    .tablet_nav{
+        display: none;
+       }
+  }
+@media screen and (min-width: 650px) and (max-width:1300px) {
+    .tabs{
+      /* background-color: lightgreen; */
+    }
+    .desktop_nav{
+     display: none;
+    }
+    .tablet_nav2{
+        display: none;
+       }
+  }
+  @media screen and (min-width: 1300px) {
+    .tablet_nav{
+        display: none;
+       }
+     .tablet_nav2{
+        display: none;
+       }
+  }
+  @media screen and (max-width: 500px) {
+    .tablet_nav{
+        display: none;
+       }
+     .desktop_nav{
+        display: none;
+       }
+  }
