@@ -1,8 +1,9 @@
-.Main_div{
+.Main_div {
     width: 100%;
-    height: 100%;  
+    height: 100%;
 }
-.div{
+
+.div {
     width: 100%;
     /* 80 is the size of top nav */
     height: calc(100% - 80px);
@@ -11,70 +12,183 @@
     justify-content: space-evenly;
     align-items: center;
     padding: 15px;
-    
-    
+
+
 
 }
-.div1{
-/* background-color: rgb(90, 176, 176); */
-width:65%;
-height: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
+
+.div1 {
+    /* background-color: rgb(90, 176, 176); */
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.div1_1{
-/* background-color: blueviolet; */
-width: 100%;
-height: 50%;
-display: flex;
-justify-content: space-between;
-/* align-items: center; */
-padding: 10px;
+
+.div1_1 {
+    /* background-color: blueviolet; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px;
 
 }
-.input_form_div{
-width: 68%;
-height: 100%;
-background-color: var(--boxcolor);
-border-radius: 15px;
+
+.input_form_div {
+    width: 68%;
+    height: 100%;
+    /* max-width: 700px; */
+    background-color: var(--boxcolor);
+    border-radius: 15px;
 }
-.OverView_div{
+
+.OverView_div {
     width: 30%;
     height: 100%;
     background-color: var(--boxcolor);
     border-radius: 15px;
 }
-.div1_2{
-/* background-color: aqua; */
-width: 100%;
-height: 50%;
-display: flex;
-justify-content: center;
-align-items: center;
-padding: 10px;
+
+@media screen and (max-width:1000px) {
+    .input_form_div {
+        width: 100%;
+    }
+
+    .OverView_div {
+        display: none;
+    }
+}
+
+.div1_2 {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
 
 }
-.graph{
+
+.graph {
     width: 100%;
     height: 100%;
     background-color: var(--boxcolor);
     border-radius: 15px;
 }
-.div2{
-  width: 35%;
-height: 100%;  
-/* background-color: blue; */
-display: flex;
-/* align-items: center; */
-justify-content: center;
-padding:10px;
+
+.div2 {
+    width: 35%;
+    height: 100%;
+    /* background-color: blue; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 10px;
 }
-.transction_div{
+
+.transction_div {
     width: 100%;
-    height: 100%;  
+    height: 100%;
     background-color: rgb(55, 55, 129);
     background-color: var(--boxcolor);
     border-radius: 15px;
+}
+
+@media screen and (max-width:600px) {
+    .div {
+        width: 100%;
+        /* 80 is the size of top nav */
+        height: calc(100% - 80px);
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        overflow-y: auto;
+        flex-direction: column;
+
+
+    }
+
+    .div::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: #F5F5F5;
+    }
+
+    .div::-webkit-scrollbar {
+        width: 12px;
+        background-color: #F5F5F5;
+    }
+
+    .div::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+        background-color: #555;
+    }
+
+    /*
+ *  STYLE 2
+ */
+
+ .div::-webkit-scrollbar-track {
+        /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+        border-radius: 10px;
+        background-color:transparent;
+    }
+
+    .div::-webkit-scrollbar {
+        width: 10px;
+        background-color:transparent;
+    }
+
+    .div::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3); */
+        background-color: var(--navcolor);
+    }
+
+    .input_form_div {
+        width: 100%;
+        height: 100%;
+        /* max-width: 700px; */
+        /* min-height: 500px; */
+        background-color: var(--boxcolor);
+        border-radius: 15px;
+    }
+
+    .graph {
+        width: 100%;
+        height: 100%;
+        /* min-height: 400px; */
+        background-color: var(--boxcolor);
+        border-radius: 15px;
+    }
+
+    .div1 {
+        /* background-color: rgb(90, 176, 176); */
+        width: 100%;
+        height: 100%;
+        min-height: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .div2 {
+        width: 100%;
+        /* height: 100%; */
+        min-height: 500px;
+        /* background-color: blue; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
 }

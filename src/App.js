@@ -3,6 +3,7 @@ import Styles from "./App.module.css"
 import { Navigate } from './Components';
 import { Dashboard,Budget,Expense,Friends,Help,Report,Setting,Todo } from './Pages';
 import {Route,Switch} from "react-router-dom"
+import { ExpenseContextProvider } from './Context';
 
 
 
@@ -10,6 +11,7 @@ import {Route,Switch} from "react-router-dom"
 
 function App() {
   return (
+    <ExpenseContextProvider>
     <div className={Styles.Main_div}>
       {/* nav */}
       <div className={Styles.Nav} >
@@ -31,6 +33,7 @@ function App() {
 </Switch>
 </div>
     </div>
+    </ExpenseContextProvider>
   );
 }
 

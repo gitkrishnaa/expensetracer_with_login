@@ -1,41 +1,39 @@
 import React, { useState } from 'react'
-import CreateCon from "./ContextCreate"
+import ContextCreate from "./ContextCreate"
+import { useReducer } from 'react'
 function Provider(props) {
 
-// using useState for data inseting from input
-// you can use useReducer also
-const [expenseData,setExpenseData]=useState([])
+
+// expense data management
+const ACTION ={
+    ADD:"add",
+    REMOVEONE:"removeone_data",
+    EDIT:"Edit",
+    DELETE_ALL:"delete_everything"
+}
+const reduceCallback=(state,action)=>{
+    const temp_state=[...state]
+  console.log(state)
+if(action.type==ACTION.ADD){
+    const value= action.value
+    temp_state.push(value)
+    return temp_state
+}
+}
+const [state,dispatch]=useReducer(reduceCallback,[]);
 
 
-// creating add data into it
-const add=(d)=>{
-    let arr=[...expenseData]
-    arr.push(d)
-    setExpenseData(arr)
-//  console.log(todo)   
+ const addExpense=(item)=>{
+    dispatch({type:ACTION.ADD,value:item})
+alert("added")
 }
-const Delete_todo=(id)=>{
-    let arr=[...expenseData]
-    arr[id]="";
-    setExpenseData(arr)
- console.log(expenseData)  
-// alert(id) 
-}
-const edit_toto=(id,data)=>{
-    let arr=[...expenseData]
-    arr[id]=data;
-    setExpenseData(arr)
- console.log(expenseData)  
-// alert(id) 
-}
-// so id not assign
 
   return (
-    <CreateCon.Provider value={{add,todo,Delete_todo,edit_toto}}>
+    <ContextCreate.Provider value={{addExpense}}>
 
 {props.children}
 
-    </CreateCon.Provider>
+    </ContextCreate.Provider>
   )
 }
 
