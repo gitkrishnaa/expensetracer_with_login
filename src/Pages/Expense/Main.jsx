@@ -1,12 +1,12 @@
 import React from "react";
 import Styles from "./Styles.module.css";
 import { Top_nav } from "../../Components";
-import { AddItemForm } from "../../ExpensePageComponent";
+import { AddItemForm,Transaction_component } from "../../ExpensePageComponent";
 import { ExpenseContextProvider } from "../../Context";
 
 function Main() {
   return (
-    <ExpenseContextProvider>
+   
     <div className={Styles.Main_div}>
       <Top_nav Page_name={"Expenses"} />
       {/* <AddItemForm/> */}
@@ -26,11 +26,13 @@ function Main() {
         </div>
         {/* transction */}
         <div className={Styles.div2}>
-          <div className={Styles.transction_div}>transction</div>
+          <div className={Styles.transction_div}>
+          <Transaction_component/>
+          </div>
         </div>
       </div>
     </div>
-    </ExpenseContextProvider>
+    
   );
 }
 

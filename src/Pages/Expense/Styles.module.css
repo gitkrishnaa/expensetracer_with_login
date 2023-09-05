@@ -44,6 +44,7 @@
     /* max-width: 700px; */
     background-color: var(--boxcolor);
     border-radius: 15px;
+    box-shadow: var(--BoxShadow_for_div);
 }
 
 .OverView_div {
@@ -51,6 +52,7 @@
     height: 100%;
     background-color: var(--boxcolor);
     border-radius: 15px;
+    box-shadow: var(--BoxShadow_for_div);
 }
 
 @media screen and (max-width:1000px) {
@@ -79,6 +81,7 @@
     height: 100%;
     background-color: var(--boxcolor);
     border-radius: 15px;
+    box-shadow: var(--BoxShadow_for_div);
 }
 
 .div2 {
@@ -97,6 +100,8 @@
     background-color: rgb(55, 55, 129);
     background-color: var(--boxcolor);
     border-radius: 15px;
+    box-shadow: var(--BoxShadow_for_div);
+    overflow-y: auto;
 }
 
 @media screen and (max-width:600px) {

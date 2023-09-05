@@ -49,6 +49,7 @@ const Add_data_Handler=()=>{
   <option value="Travel">Travel</option>
   <option value="Invest">Invest</option>
   <option value="Monthly">Monthly</option>
+  <option value="Other">Other</option>
   <option value="UnNececsary">UnNececsary</option>
 </select>
       </div>

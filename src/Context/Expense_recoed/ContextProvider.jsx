@@ -25,11 +25,11 @@ const [state,dispatch]=useReducer(reduceCallback,[]);
 
  const addExpense=(item)=>{
     dispatch({type:ACTION.ADD,value:item})
-alert("added")
+
 }
 
   return (
-    <ContextCreate.Provider value={{addExpense}}>
+    <ContextCreate.Provider value={{addExpense,data:state}}>
 
 {props.children}
 

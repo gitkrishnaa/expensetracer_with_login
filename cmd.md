@@ -6,6 +6,6 @@ cd frontend
 git add .
 git commit -m ""
 
-git checkout -b 
+git checkout -b o
 
 git branch

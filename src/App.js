@@ -3,7 +3,7 @@ import Styles from "./App.module.css"
 import { Navigate } from './Components';
 import { Dashboard,Budget,Expense,Friends,Help,Report,Setting,Todo } from './Pages';
 import {Route,Switch} from "react-router-dom"
-import { ExpenseContextProvider } from './Context';
+import { ExpenseContextProvider,BudgetContextProvider } from './Context';
 
 
 
@@ -12,6 +12,7 @@ import { ExpenseContextProvider } from './Context';
 function App() {
   return (
     <ExpenseContextProvider>
+      <BudgetContextProvider>
     <div className={Styles.Main_div}>
       {/* nav */}
       <div className={Styles.Nav} >
@@ -33,6 +34,7 @@ function App() {
 </Switch>
 </div>
     </div>
+    </BudgetContextProvider>
     </ExpenseContextProvider>
   );
 }
