@@ -1,13 +1,14 @@
 import React from "react";
 import Styles from "./Styles.module.css";
 import { Top_nav } from "../../Components";
-import { AddItemForm,Monthly_pay_List_component } from "../../Monthly_payPageComponent";
+import { AddItemForm,Transaction_component ,Monthly_pay_List_component} from "../../Monthly_payPageComponent";
+import { ExpenseContextProvider } from "../../Context";
 
 function Main() {
   return (
-    
+   
     <div className={Styles.Main_div}>
-      <Top_nav Page_name={"Budget"} />
+      <Top_nav Page_name={"Monthly Pay"} />
       {/* <AddItemForm/> */}
 
       {/* form and graph */}
@@ -16,8 +17,11 @@ function Main() {
           {/* form and small graph */}
           <div className={Styles.div1_1}>
             <div className={Styles.input_form_div}><AddItemForm/></div>
-            {/* overview of left budget,total expeses, */}
-            <div className={Styles.OverView_div}>OverView</div>
+            {/* montly pay list */}
+            <div className={Styles.OverView_div}>
+              <span>oveview</span>
+              <Monthly_pay_List_component/> 
+            </div>
           </div>
           <div className={Styles.div1_2}>
             <div className={Styles.graph}>graph</div>
@@ -26,7 +30,7 @@ function Main() {
         {/* transction */}
         <div className={Styles.div2}>
           <div className={Styles.transction_div}>
-          <Monthly_pay_List_component/>
+         
           </div>
         </div>
       </div>
