@@ -17,7 +17,7 @@ const current_month=new Date().getMonth();
       {/* n,id is array sequence */}
   {Monthly_payContext.data.map((e,n)=>{
     // {console.log(e.payment_by_month[`${current_month}`],"check e")}
-    {console.log(" from /tranction_monthly_pay")}
+    {console.log(" from /tranction_monthly_pay ")}
   return e.payment_by_month[`${current_month}`]==undefined?<Transaction_Monthly_pay_list_render paid={false} id={n}  data={e}/>:
   <Transaction_Monthly_pay_list_render paid={true} data={e}/>
   // console("already paid")
