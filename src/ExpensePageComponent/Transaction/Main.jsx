@@ -9,7 +9,9 @@ function Main() {
 
   return (
     <div className={Styles.Main_div}>
-  {ExpenseContext.data.map(e=><Transaction_list_render data={e}/>)}
+      <button>load More</button>
+  {ExpenseContext.data.map((e,n)=>{
+  return n<20?<Transaction_list_render data={e}/>:console.log()})}
 
     </div>
   )

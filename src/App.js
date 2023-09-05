@@ -4,6 +4,7 @@ import { Navigate } from './Components';
 import { Dashboard,Budget,Expense,Friends,Help,Report,Setting,Todo,Monthly_pay } from './Pages';
 import {Route,Switch} from "react-router-dom"
 import { ExpenseContextProvider,BudgetContextProvider,Monthly_payContextProvider } from './Context';
+import { DataManage1Context_Provider } from './Data_Manage';
 
 
 
@@ -14,6 +15,7 @@ function App() {
     <ExpenseContextProvider>
       <BudgetContextProvider>
       <Monthly_payContextProvider>
+      <DataManage1Context_Provider>
     <div className={Styles.Main_div}>
       {/* nav */}
       <div className={Styles.Nav} >
@@ -36,6 +38,7 @@ function App() {
 </Switch>
 </div>
     </div>
+    </DataManage1Context_Provider>
     </Monthly_payContextProvider>
     </BudgetContextProvider>
     </ExpenseContextProvider>
