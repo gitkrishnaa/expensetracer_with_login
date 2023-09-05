@@ -7,51 +7,37 @@ import {MdOutlineFastfood} from "react-icons/md"  // food
 // import {LiaCalendarDaySolid} from "react-icons/li" //month
 import {FcCancel} from "react-icons/fc" //unwanted
 import { useState } from 'react';
-// const Icon=(props)=>{
-//   switch (props.value) {
-//     case "Food":
-//       alert("match")
-//       return <><MdOutlineFastfood/>s</>
-//       break;
-//       case "Travel":
-//         return <MdOutlineModeOfTravel/>
-//       break;
-//       case "Invest":
-//         return <FcMoneyTransfer/>
-//       break;
-//       case "Monthly":
-//         return <MdOutlineFastfood/>
-//       break;
-//       case "UnNecesary":
-//         case "Monthly":
-//           return <FcCancel/>
-         
-//       break;
-//     default:return <p>n</p>
-//       break;
-//   }
-// }
+import { Monthly_payContextCreate } from '../../Context';
+import { useContext } from 'react';
+
 function Main(props) {
+const Monthly_payContext=useContext(Monthly_payContextCreate);
+const pay_by_month_payment_update=Monthly_payContext.pay_by_month_payment_update;
+
+const Monthly_pay_current_month_handler=(e)=>{
+  // alert(e.target.id.slice(22))
+  const index=e.target.id.slice(22)
+  const currentMonth=new Date().getMonth()
+  pay_by_month_payment_update(index,currentMonth)
+}
+
   console.log("Montly pay page section")
   console.log(props,"Montly pay")
   return (
-    // Montly_pay_Amount
-   
-    // Montly_pay_Date
-  
-    // Montly_pay_Details
-  
-    // Montly_pay_Receiver
+ 
     
 
     <div className={Styles.Main_div}>
+ 
   {/* {props.data.Expense_Name} */}
   <div className={Styles.div1}>
   <div> {props.data.Montly_pay_Receiver} </div>
 {/* <div> {props.data.Montly_pay_Details} </div> */}
 <div> {props.data.Montly_pay_Amount} </div>
 
-<div > <FcInfo/> <span style={{color:"red"}}><MdOutlineDeleteForever/></span></div>
+<div > 
+  {props.paid?<div>paid</div>:<div><button onClick={Monthly_pay_current_month_handler} id={"monthly_payment_button"+props.id}>Pay</button></div>}
+    </div>
   </div>
 
     </div>

@@ -49,6 +49,7 @@ function Main(props) {
   <div className={Styles.div1}>
   <div> {props.data.Montly_pay_Receiver} </div>
 {/* <div> {props.data.Montly_pay_Details} </div> */}
+
 <div> {props.data.Montly_pay_Amount} </div>
 
 <div > <FcInfo/> <span style={{color:"red"}}><MdOutlineDeleteForever/></span></div>

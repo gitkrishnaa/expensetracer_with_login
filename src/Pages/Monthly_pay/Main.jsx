@@ -1,7 +1,7 @@
 import React from "react";
 import Styles from "./Styles.module.css";
 import { Top_nav } from "../../Components";
-import { AddItemForm,Transaction_component ,Monthly_pay_List_component} from "../../Monthly_payPageComponent";
+import { AddItemForm,Transaction_component ,Monthly_pay_List_component,Transaction_Monthly_pay_component} from "../../Monthly_payPageComponent";
 import { ExpenseContextProvider } from "../../Context";
 
 function Main() {
@@ -30,7 +30,7 @@ function Main() {
         {/* transction */}
         <div className={Styles.div2}>
           <div className={Styles.transction_div}>
-         
+         <Transaction_Monthly_pay_component/>
           </div>
         </div>
       </div>
