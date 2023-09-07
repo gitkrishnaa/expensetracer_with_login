@@ -7,7 +7,7 @@
   },
   {
     Expense_Amount: 900,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-2-9',
     Expense_Details: 'hfayu,viblm,pblnh,kerpw,lkjow,bwtrw',
     Expense_Name: 'sahdwq'
@@ -21,7 +21,7 @@
   },
   {
     Expense_Amount: 550,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-8-27',
     Expense_Details: 'dples,yxedg,rddti,ectns,ymxcc,erknh',
     Expense_Name: 'tggptk'
@@ -77,7 +77,7 @@
   },
   {
     Expense_Amount: 350,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-3-6',
     Expense_Details: 'dgavc,qarwo,psgyg,wvjie,mtolx,sgkro',
     Expense_Name: 'sdxtku'
@@ -147,14 +147,14 @@
   },
   {
     Expense_Amount: 580,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-8-8',
     Expense_Details: 'npqah,syiak,xyoks,ykywq,crxfx,vxcsb',
     Expense_Name: 'xbarec'
   },
   {
     Expense_Amount: 910,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-9-5',
     Expense_Details: 'dmksn,uxgoa,ogbaq,mqmau,sjwnv,qxmts',
     Expense_Name: 'vqarir'
@@ -210,7 +210,7 @@
   },
   {
     Expense_Amount: 950,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-8-24',
     Expense_Details: 'aeabf,ewmqo,qherg,egfxs,drwml,itxrp',
     Expense_Name: 'ectvst'
@@ -238,7 +238,7 @@
   },
   {
     Expense_Amount: 920,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-2-14',
     Expense_Details: 'dhwto,njsai,ciytn,eqtur,hoqnv,vkpss',
     Expense_Name: 'ujlxqw'
@@ -259,7 +259,7 @@
   },
   {
     Expense_Amount: 560,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-9-5',
     Expense_Details: 'rjoux,xitdu,wiiyn,gfsdo,rafxl,yfdau',
     Expense_Name: 'dhpuku'
@@ -315,7 +315,7 @@
   },
   {
     Expense_Amount: 60,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-7-2',
     Expense_Details: 'rdytb,eadew,mwkuk,fvyup,yyjms,qenvo',
     Expense_Name: 'jpgsbp'
@@ -357,14 +357,14 @@
   },
   {
     Expense_Amount: 840,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-2-8',
     Expense_Details: 'xcibb,ydyeb,kwkkd,qljjd,rdaar,eacwe',
     Expense_Name: 'baivqj'
   },
   {
     Expense_Amount: 940,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-9-3',
     Expense_Details: 'akjly,jrcgd,fwnpj,ubtmv,gybyd,yktok',
     Expense_Name: 'lrmrwd'
@@ -469,7 +469,7 @@
   },
   {
     Expense_Amount: 500,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-2-4',
     Expense_Details: 'fqapk,qbups,qvdew,hlmmg,wqbmc,gnpnd',
     Expense_Name: 'qteoph'
@@ -560,7 +560,7 @@
   },
   {
     Expense_Amount: 420,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-5-6',
     Expense_Details: 'pleqc,dhpyb,yoigk,dnhjh,moitf,ktmnh',
     Expense_Name: 'fkjpkb'
@@ -630,7 +630,7 @@
   },
   {
     Expense_Amount: 730,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-6-26',
     Expense_Details: 'ikklh,ovgxg,ptmdi,bqxla,ptcal,bnuto',
     Expense_Name: 'gxjoqr'
@@ -658,7 +658,7 @@
   },
   {
     Expense_Amount: 780,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-7-17',
     Expense_Details: 'ivgry,cvwwx,bawyu,wtoxi,dtjqs,wvalj',
     Expense_Name: 'kjhqbv'
@@ -672,14 +672,14 @@
   },
   {
     Expense_Amount: 980,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-5-28',
     Expense_Details: 'urket,ljlso,pqnqi,mgbnc,odcoc,grtfn',
     Expense_Name: 'fuilua'
   },
   {
     Expense_Amount: 730,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-9-17',
     Expense_Details: 'blaif,gbepd,eknpj,vkckl,kelyb,cduna',
     Expense_Name: 'qrhaag'
@@ -777,7 +777,7 @@
   },
   {
     Expense_Amount: 590,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-2-11',
     Expense_Details: 'umbvt,nkdxp,ipuba,lqqfv,ykpij,qkjco',
     Expense_Name: 'dyrlvp'
@@ -868,7 +868,7 @@
   },
   {
     Expense_Amount: 0,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-2-4',
     Expense_Details: 'hpjen,tqjbk,fkdoe,xslnt,hbnkj,jlcyg',
     Expense_Name: 'lphdqs'
@@ -924,7 +924,7 @@
   },
   {
     Expense_Amount: 260,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-9-12',
     Expense_Details: 'ewwyw,irtfd,gunij,weydt,vyhpv,nmulf',
     Expense_Name: 'grsiha'
@@ -1023,7 +1023,7 @@
   },
   {
     Expense_Amount: 880,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-5-24',
     Expense_Details: 'hxiqn,stjls,jbvqx,wtygk,wehnn,itmfa',
     Expense_Name: 'ubqoah'
@@ -1149,7 +1149,7 @@
   },
   {
     Expense_Amount: 740,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-3-13',
     Expense_Details: 'tggru,xhewx,pfykk,qbhop,gpyim,yddch',
     Expense_Name: 'jhlisk'
@@ -1170,7 +1170,7 @@
   },
   {
     Expense_Amount: 670,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-9-11',
     Expense_Details: 'rjvfn,csyiq,gqwjr,myify,yqjse,vnrjp',
     Expense_Name: 'wwdcog'
@@ -1205,14 +1205,14 @@
   },
   {
     Expense_Amount: 340,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-5-1',
     Expense_Details: 'ipxvb,efmof,xmpxl,ffiis,moboo,qutnf',
     Expense_Name: 'txoppx'
   },
   {
     Expense_Amount: 350,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-3-12',
     Expense_Details: 'sthxr,lxrpv,xrukh,ncluf,brweh,xdwak',
     Expense_Name: 'xwxllp'
@@ -1366,7 +1366,7 @@
   },
   {
     Expense_Amount: 110,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-3-25',
     Expense_Details: 'linbe,rtuxy,tvvvx,ricbu,qbrws,xikrk',
     Expense_Name: 'dkoouj'
@@ -1527,7 +1527,7 @@
   },
   {
     Expense_Amount: 120,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-1-26',
     Expense_Details: 'chldd,smuvr,xwgcn,reukl,ugkvc,sospi',
     Expense_Name: 'qgrxfs'
@@ -1597,7 +1597,7 @@
   },
   {
     Expense_Amount: 330,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-2-26',
     Expense_Details: 'obsgf,tjoyd,cgfpk,vjljw,towix,jsymb',
     Expense_Name: 'jgdoqx'
@@ -1639,7 +1639,7 @@
   },
   {
     Expense_Amount: 80,
-    Expense_Category: 'Pizza',
+    Expense_Category: 'Food',
     Expense_Date: '2023-3-26',
     Expense_Details: 'rxgxc,wajbt,qvjxl,aocfr,bmrfo,laijg',
     Expense_Name: 'mebxrc'

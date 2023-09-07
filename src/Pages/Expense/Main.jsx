@@ -3,6 +3,7 @@ import Styles from "./Styles.module.css";
 import { Top_nav } from "../../Components";
 import { AddItemForm,Transaction_component } from "../../ExpensePageComponent";
 import { ExpenseContextProvider } from "../../Context";
+import { ExpenseMonthChart } from "../../Charts";
 
 function Main() {
   return (
@@ -21,7 +22,11 @@ function Main() {
             <div className={Styles.OverView_div}>OverView</div>
           </div>
           <div className={Styles.div1_2}>
-            <div className={Styles.graph}>graph</div>
+            <div className={Styles.graph}>
+{/* <span>chart</span> */}
+<ExpenseMonthChart/>
+
+            </div>
           </div>
         </div>
         {/* transction */}

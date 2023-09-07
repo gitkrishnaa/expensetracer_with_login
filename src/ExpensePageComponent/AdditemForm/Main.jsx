@@ -29,7 +29,7 @@ useEffect(()=>{
 const Add_data_Handler=()=>{
   const dataObj={
     Expense_Name:ExpenseName_ref.current.value,
-    Expense_Amount:Expense_Amount_ref.current.value,
+    Expense_Amount:Number(Expense_Amount_ref.current.value)+0,
     Expense_Date:Expense_Date_ref.current.value,
     Expense_Details:Expense_Details_ref.current.value,
     Expense_Category:Expense_Category_ref.current.value,
