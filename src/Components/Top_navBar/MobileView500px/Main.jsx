@@ -2,29 +2,22 @@ import React from "react";
 import Styles from "./Styles.module.css";
 import {
   Addexpense_button,
-  Notification_btn,
   Report_gen_button,
+  Report_icon_btn,
   SearchBar,
   Tablet_view_add_button,
+  Tablet_add_icon,
+  Notification_btn
 } from "../../index";
 import { MdNotificationsNone } from "react-icons/md";
 
 function Main(props) {
   return (
-    <div className={Styles.Main_div}>
-      mobile
-      {/* page name */}
-      <div className={Styles.Page_name}>{props.Page_name}</div>
+  
       <div className={Styles.tabs}>
         <div className={Styles.add_btn}>
-          <Addexpense_button btn_name={"Expense"} />
-          <Addexpense_button btn_name={"Todo"} />
-          <Addexpense_button btn_name={"Friends"} />
-          <Report_gen_button btn_name={"Report"} />
-        </div>
-
-        <div className={Styles.add_btn_yablet_view}>
-          <Tablet_view_add_button />
+        <Tablet_add_icon/>
+          <Report_icon_btn btn_name={""} />
         </div>
 
         <div className={Styles.SearchBar}>
@@ -34,8 +27,7 @@ function Main(props) {
         {/* icons */}
         <Notification_btn/>
       </div>
-      {/* search */}
-    </div>
+
   );
 }
 

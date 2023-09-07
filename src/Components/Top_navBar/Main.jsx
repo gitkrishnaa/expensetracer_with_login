@@ -16,7 +16,7 @@ function Main(props) {
 <div  className={Styles.desktop_nav}><DesktopViewTop_nav/></div>
 <div  className={Styles.tablet_nav}><TabletViewTop_nav/></div>
 <div  className={Styles.tablet_nav2}><TabletViewTop_nav2/></div>
-
+{/* <div  className={Styles.mobile_nav}><MobileViewTop_nav/></div> */}
 {/* <div><DesktopViewTop_nav/></div> */}
        </div>
 

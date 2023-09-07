@@ -1,1 +1,1 @@
-export {default as ExpenseMonthChart} from "./ExpenseChart/MonthExpenseChart"
+export {default as ExpenseMonthChart} from "./ExpenseChart/RechartMonthExpense"

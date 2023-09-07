@@ -1,70 +1,118 @@
-import React, { useState } from 'react'
-import { Chart as ChartJS, ArcElement, Tooltip, Legend ,CategoryScale} from "chart.js";
-import Chart from "chart.js/auto";
-import { Pie } from "react-chartjs-2";
-import PieChart from './PieChart';
+import React, { Component } from "react";
+import Chart from "react-apexcharts";
+import { ChartDataColor20 } from "../Colors/ChartDataColor20";
 
-// import { CategoryScale } from "chart.js";
-const Data = [
-  {
-    id: 1,
-    year: 2016,
-    userGain: 80000,
-    userLost: 823
-  },
-  {
-    id: 2,
-    year: 2017,
-    userGain: 45677,
-    userLost: 345
-  },
-  {
-    id: 3,
-    year: 2018,
-    userGain: 78888,
-    userLost: 555
-  },
-  {
-    id: 4,
-    year: 2019,
-    userGain: 90000,
-    userLost: 4555
-  },
-  {
-    id: 6,
-    year: 2020,
-    userGain: 45000,
-    userLost: 234
-  }
-];
-Chart.register(CategoryScale);
-function MonthExpenseChart() {
-  const [chartData, setChartData] = useState({
-    labels: Data.map((data) => data.year), 
-    datasets: [
-      {
-        label: "Users Gained ",
-        data: Data.map((data) => data.userGain),
-        backgroundColor: [
-          "rgba(75,192,192,1)",
-          "#ecf0f1",
-          "#50AF95",
-          "#f3ba2f",
-          "#2a71d0"
+class App extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      options:  {
+        series: [{
+        data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380]
+      }],
+        chart: {
+        type: 'bar',
+        height: 380
+      },
+      plotOptions: {
+        bar: {
+          barHeight: '100%',
+          distributed: true,
+          horizontal: false,
+          dataLabels: {
+            position: 'bottom'
+          },
+        }
+      },
+      colors:ChartDataColor20,
+      dataLabels: {
+        enabled: true,
+        textAnchor: 'start',
+        style: {
+          colors: ['white']
+        },
+        formatter: function (val, opt) {
+          return opt.w.globals.labels[opt.dataPointIndex] + ":  " + val
+        },
+        offsetX: 0,
+        dropShadow: {
+          enabled: true
+        }
+      },
+      stroke: {
+        width: 1,
+        colors: ['#fff']
+      },
+      xaxis: {
+        categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
+          'United States', 'China', 'India'
         ],
-        borderColor: "black",
-        borderWidth: 2
+      },
+      yaxis: {
+        labels: {
+          show: true
+        }
+      },
+      title: {
+          text: 'Custom DataLabels',
+          align: 'center',
+          floating: true,
+          
+      },
+      subtitle: {
+          text: 'Category Names as DataLabels inside bars',
+          align: 'center',
+          color:"white"
+      },
+      tooltip: {
+        theme: 'dark',
+        x: {
+          show: false
+        },
+        y: {
+          title: {
+            formatter: function () {
+              return ''
+            }
+          }
+        }
       }
-    ]
-  });
- 
-  return (
-    <div className="App123" >
-      {/* <p>Using Chart.js in React</p> */}
-      <PieChart chartData={chartData} />
-    </div>
-  );
+      },
+      
+      xaxis: {
+        type: 'datetime'
+      },
+      series: [
+        {
+          name: "series-1",
+          data: [30, 40, 45, 50, 49, 60, 70, 91]
+        },
+        // {
+        //   name: "series-2",
+        //   data: [90, 80, 75, 60, 39, 60, 70, 91]
+        // }
+      ]
+    };
+  }
+
+  render() {
+    return (
+      <div className="app">
+        <div className="row">
+          <div className="mixed-chart">
+            <Chart
+              options={this.state.options}
+              series={this.state.series}
+              type="bar"
+              width="100%"
+              height="380px"
+            />
+          </div>
+        </div>
+      </div>
+    );
+  }
 }
 
-export default MonthExpenseChart
-
+export default App;

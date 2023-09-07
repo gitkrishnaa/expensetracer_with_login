@@ -16,7 +16,7 @@ color: white;
   max-width: 200px;
   background-color:var(--navcolor);
   border-radius:0px 20px 20px 0px;
-
+ display: none;
 
 }
 .Page{

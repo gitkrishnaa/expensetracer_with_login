@@ -6,7 +6,7 @@ export const ChartDataColor20= [
     "#27AE60",
     "#F39C12",
     "#3498DB",
-    "#E74C3C",
+    "#E7AI3C",
     "#2ECC71",
     "#D35400",
     "#9B59B6",

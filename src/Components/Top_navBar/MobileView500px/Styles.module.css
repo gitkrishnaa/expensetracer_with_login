@@ -1,26 +1,17 @@
-.Main_div{
-   /* background-color: aquamarine; */
-   display: flex;
-   height: 80px;
-   justify-content: center;
-   align-items: center;
-}
 
-.Page_name{
-    padding: 30px;
-    width: 30%;
-    /* background-color: aquamarine; */
-}
+
+
 .tabs{
-    width: 70%;
+    width: 100%;
     /* background-color: blueviolet; */
     display: flex;
     justify-content: end;
-    padding: 30px;
+    padding: 5px;
+    
 
 }
 .add_btn{
-    width: 50%;
+    width: 40%;
     /* background-color: blanchedalmond; */
     display: flex;
     justify-content: end;
@@ -28,19 +19,17 @@
 .add_btn>div{
   margin: 0px 5px;
 }
-.add_btn_yablet_view{
-    width: 10%;
-    /* background-color: aqua; */
-}
+
 
 
 .SearchBar{
-    /* background-color: aqua; */
-    width: 35%;
+    background-color: aqua;
+    width: 60%;
     display: flex;
     justify-content: center;
     max-width: 200px;
-    margin: 0px 20px;
+    /* margin: 0px 20px; */
+    display: none;
 }
 .icons_button{
     background-color: var(--boxcolor); 
