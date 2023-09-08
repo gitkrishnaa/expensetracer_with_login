@@ -22,11 +22,7 @@ align-items: start;
 height: 19px;
 
 }
-.full_btn:hover,.icon_btn:hover{
-   background-color:var(--top_nav_hover_color);
-transform: scale(1.2);
 
-}
 .icon_btn{
    background-color: var(--boxcolor); 
    /* background-color: antiquewhite; */
@@ -41,4 +37,10 @@ transform: scale(1.2);
    display: flex;
    justify-content: center;
    align-items: center;
+   transition: 0.3s ease-in-out;
+}
+.full_btn:hover,.icon_btn:hover{
+   background-color:var(--top_nav_hover_color);
+transform: scale(1.2);
+
 }

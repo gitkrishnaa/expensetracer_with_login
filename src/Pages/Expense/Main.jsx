@@ -4,6 +4,7 @@ import { Top_nav } from "../../Components";
 import { AddItemForm,Transaction_component } from "../../ExpensePageComponent";
 import { ExpenseContextProvider } from "../../Context";
 import { ExpenseMonthChart } from "../../Charts";
+import MonthExpenseChart from "../../Charts/ExpenseChart/MonthExpenseChart";
 
 function Main() {
   return (
@@ -24,7 +25,7 @@ function Main() {
           <div className={Styles.div1_2}>
             <div className={Styles.graph}>
 {/* <span>chart</span> */}
-<ExpenseMonthChart/>
+{/* <MonthExpenseChart/> */}
 
             </div>
           </div>

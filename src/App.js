@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import Styles from "./App.module.css"
-import { Navigate } from './Components';
+import { Mobile_bottom_nav, Navigate } from './Components';
 import { Dashboard,Budget,Expense,Friends,Help,Report,Setting,Todo,Monthly_pay } from './Pages';
 import {Route,Switch} from "react-router-dom"
 import { ExpenseContextProvider,BudgetContextProvider,Monthly_payContextProvider } from './Context';
@@ -19,11 +19,11 @@ function App() {
     <div className={Styles.Main_div}>
       {/* nav */}
       <div className={Styles.Nav} >
-
-
      < Navigate/>
       </div>
-
+      <div className={Styles.Mobile_bottom_Nav} >
+      <Mobile_bottom_nav/>
+      </div>
 <div className={Styles.Page}>
 <Switch>
 <Route exact path="/"><Dashboard/></Route>

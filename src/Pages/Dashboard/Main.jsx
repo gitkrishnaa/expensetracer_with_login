@@ -5,6 +5,8 @@ import {Transaction_component } from "../../ExpensePageComponent";
 import { ExpenseContextProvider } from "../../Context";
 import { DataManage1ContextCreate } from "../../Data_Manage";
 import { useContext } from "react";
+import { ExpenseMonthChart } from "../../Charts";
+import MonthExpenseChart from "../../Charts/ExpenseChart/MonthExpenseChart";
 
 function Main() {
 const DataManage1Context=useContext(DataManage1ContextCreate)
@@ -32,7 +34,13 @@ DataManage1Context.feed_expense_data}>feedexpense data</button>
             </div>
           </div>
           <div className={Styles.div1_2}>
-            <div className={Styles.graph}>graph</div>
+            <div className={Styles.graph}>
+            {/* <MonthExpenseChart/> */}
+
+            </div>
+
+          
+
           </div>
         </div>
         {/* transction */}

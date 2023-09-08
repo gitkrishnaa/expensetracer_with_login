@@ -15,8 +15,9 @@ function Main(props) {
   return (
   
       <div className={Styles.tabs}>
+        <div>
         <div className={Styles.add_btn}>
-        <Tablet_add_icon/>
+        {/* <Tablet_add_icon/> */}
           <Report_icon_btn btn_name={""} />
         </div>
 
@@ -25,7 +26,11 @@ function Main(props) {
         </div>
 
         {/* icons */}
+        <div className={Styles.add_btn}>
         <Notification_btn/>
+        </div>
+        </div>
+
       </div>
 
   );
