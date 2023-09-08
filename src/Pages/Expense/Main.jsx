@@ -25,7 +25,7 @@ function Main() {
           <div className={Styles.div1_2}>
             <div className={Styles.graph}>
 {/* <span>chart</span> */}
-{/* <MonthExpenseChart/> */}
+<MonthExpenseChart/>
 
             </div>
           </div>

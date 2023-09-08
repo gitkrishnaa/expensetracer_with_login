@@ -1,0 +1,10 @@
+.Main_div{
+    padding: 20px;
+    background-color: var(--navcolor);
+    width: 100vw;
+    min-height: 300px;
+    max-height: 80vh;
+    position: fixed;
+    bottom: 70px;
+}
+

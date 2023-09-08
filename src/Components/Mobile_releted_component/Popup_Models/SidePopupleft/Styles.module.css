@@ -1,0 +1,10 @@
+.Main_div{
+    padding: 20px;
+    background-color: aqua;
+    width: 100px;
+    height: 80vh;
+right: 30px;
+    position: fixed;
+    bottom: 70px;
+}
+
