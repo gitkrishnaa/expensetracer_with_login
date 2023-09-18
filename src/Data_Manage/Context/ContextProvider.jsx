@@ -26,6 +26,14 @@ function Provider(props) {
 
   function change_Data_format_to_year_and_month_wise() {
     const dataArr = Expense.data;
+    // if no data then dont do anything
+    if (dataArr.length == 0) {
+      console.log(
+        change_Data_format_to_year_and_month_wise,
+        "since no data so returned empty object{}"
+      );
+      return {};
+    }
     const newArrData_format = {};
     for (let i = 0; i < dataArr.length; i++) {
       const data = dataArr[i];
@@ -42,44 +50,57 @@ function Provider(props) {
     console.log(
       "this is function which convert expense context data convert to {year:{month:[{},{},{}]} function from-data manage context"
     );
-    console.log(newArrData_format);
+    console.log(newArrData_format, "newArrData_format");
     console.log("this function return data {year:{month:[{},{},{}]}");
     return newArrData_format;
   }
-  const convert_Data_format_to_year_and_month_wise_data_as_argument = (
-    dataArr
-  ) => {
-    const newArrData_format = {};
-    for (let i = 0; i < dataArr.length; i++) {
-      const data = dataArr[i];
-      const month = new Date(data.Expense_Date).getMonth() + 1;
-      const year = new Date(data.Expense_Date).getFullYear();
-      if (newArrData_format[`${year}`] == undefined) {
-        newArrData_format[`${year}`] = {};
-      }
-      if (newArrData_format[`${year}`][`${month}`] == undefined) {
-        newArrData_format[`${year}`][`${month}`] = [];
-      }
-      newArrData_format[`${year}`][`${month}`].push(data);
-    }
-    console.log(
-      "this is function which convert expense context data convert to {year:{month:[{},{},{}]} function from-data manage context"
-    );
-    console.log(newArrData_format);
-    console.log(
-      "this function take data as argument[{},{}] return data {year:{month:[{},{},{}]}"
-    );
-    return newArrData_format;
-  };
+  // const convert_Data_format_to_year_and_month_wise_data_as_argument = (
+  //   dataArr
+  // ) => {
+  //   const newArrData_format = {};
+  //   for (let i = 0; i < dataArr.length; i++) {
+  //     const data = dataArr[i];
+  //     const month = new Date(data.Expense_Date).getMonth() + 1;
+  //     const year = new Date(data.Expense_Date).getFullYear();
+  //     if (newArrData_format[`${year}`] == undefined) {
+  //       newArrData_format[`${year}`] = {};
+  //     }
+  //     if (newArrData_format[`${year}`][`${month}`] == undefined) {
+  //       newArrData_format[`${year}`][`${month}`] = [];
+  //     }
+  //     newArrData_format[`${year}`][`${month}`].push(data);
+  //   }
+  //   console.log(
+  //     "this is function which convert expense context data convert to {year:{month:[{},{},{}]} function from-data manage context"
+  //   );
+  //   console.log(newArrData_format);
+  //   console.log(
+  //     "this function take data as argument[{},{}] return data {year:{month:[{},{},{}]}"
+  //   );
+  //   return newArrData_format;
+  // };
+
   function month_wise_category_Expense_data(year, month) {
     console.log("month_wise_category_Expense_data........working");
+    
     const data = change_Data_format_to_year_and_month_wise();
     if (data[`${year}`] == undefined) {
-      alert("no_data");
+      console.log(
+        "month_wise_category_Expense_data",
+        month_wise_category_Expense_data
+      );
+      console.log("since no year data  so returned [] ");
       console.log(data, "data");
       return [];
-    } else {
-      const month_data = data[`${year}`][`${month}`];
+    }else if(data[`${year}`][`${month}`]==undefined){
+      console.log("since no year month data  so returned [] ");
+
+      return [];
+    }
+     else {
+      const tem_obj_year=data[`${year}`]
+
+      const month_data = tem_obj_year[`${month}`];
       const temp_obj = {};
       const temp_map = new Map();
       // Expense_Amount: 790,
@@ -88,6 +109,7 @@ function Provider(props) {
       // Expense_Details: "xtimg,tvexs,eeywb,ccukk,desqh,mgdal",
       // Expense_Name: "ugvwsh"
       //getting unique category
+      console.log(typeof(data),data[`${year}`][`${9}`],tem_obj_year[`${9}`],year,month,"data", month_data, data, "jh");
       month_data.map((e) => {
         temp_obj[`${e.Expense_Category}`] = 0;
 
@@ -110,10 +132,12 @@ function Provider(props) {
         })
       );
 
-      console.log("#MESSAGE from developer->Main Data to see to understand   and file location -/DatMangae>Context");
+      console.log(
+        "#MESSAGE from developer->Main Data to see to understand   and file location -/DatMangae>Context"
+      );
 
-      console.log(`month_data`,month_data,`year-${year} month-${month}`);
-      console.log(`final_data`,final_data)
+      console.log(`month_data`, month_data, `year-${year} month-${month}`);
+      console.log(`final_data`, final_data);
       return final_data;
     }
 
@@ -128,6 +152,7 @@ function Provider(props) {
           2023,
           9
         ),
+        month_wise_category_Expense_data,
         feed_expense_data,
       }}
     >

@@ -13,6 +13,13 @@ function Main(props) {
 const  [menuNav, setMenuNav] = useState(false)
 const  [addButton, setAddButton] = useState(false)
 const  [profile_nav, setProfile_nav] = useState(false);
+
+
+const closeAllHandler=()=>{
+  setMenuNav(false);
+  setAddButton(false)
+  setProfile_nav(false)
+}
 const menuHandler=()=>{
   setMenuNav(!menuNav);
   setAddButton(false)
@@ -35,9 +42,9 @@ const profileHandler=()=>{
   
       <div className={Styles.tabs}>
 
-{menuNav?<MiddleNavPopup><MobileMenu/></MiddleNavPopup>:console.log("menu closed")}
-{addButton?<MiddleNavPopup><Mobile_Add_button_div/></MiddleNavPopup>:console.log("menu closed")} 
- {profile_nav?<MiddleNavPopup><MobileProfile/></MiddleNavPopup>:console.log("menu closed")}
+{menuNav?<MiddleNavPopup onClick_backdrop_close={closeAllHandler}><MobileMenu onClick_getClosed={menuHandler} /></MiddleNavPopup>:console.log("menu closed")}
+{addButton?<MiddleNavPopup onClick_backdrop_close={closeAllHandler}><Mobile_Add_button_div /></MiddleNavPopup>:console.log("menu closed")} 
+{profile_nav?<MiddleNavPopup onClick_backdrop_close={closeAllHandler}><MobileProfile /></MiddleNavPopup>:console.log("menu closed")}
 
         <div>
 

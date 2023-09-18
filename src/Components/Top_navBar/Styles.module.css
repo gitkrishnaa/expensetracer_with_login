@@ -11,6 +11,10 @@
     padding: 30px;
     width: 30%;
     /* background-color: aquamarine; */
+    font-size: 2em;
+   text-shadow: 2px black;
+   font-weight: bold;
+   color: rgb(223, 219, 225);
 }
 .tabs{
     width: 70%;

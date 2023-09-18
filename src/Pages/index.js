@@ -7,3 +7,6 @@ export {default as Todo} from "./Todo/Main";
 export {default as Report} from "./Report/Main";
 export {default as Help} from "./Help/Main";
 export {default as Setting} from "./Setting/Main";
+export {default as Signup} from "./Signup/Signup";
+// export {default as Setting} from "./Setting/Main";
+

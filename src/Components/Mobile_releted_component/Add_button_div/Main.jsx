@@ -8,14 +8,11 @@ function Main() {
     <div className={Styles.Main_div}>
    
 
-      <div className={Styles.profile}>profile</div>
-
-
-
-      <div className={Styles.footer_nav}>
+      <div className={Styles.profile}>Add expense</div>
+      
     <AddItemForm/>
         
-      </div> 
+   
 
 
     </div>

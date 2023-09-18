@@ -35,6 +35,13 @@ const MainData=ExpenseContext.data;
 //   console.log(arr)
 //   console.log(newrenderDataArray)
 // }
+
+const sorting=[];
+// for (let i = 0; i < MainData.length; i++) {
+  
+  
+// }
+
   return (
     <div className={Styles.Main_div}>
   {MainData.map((e,n)=>{

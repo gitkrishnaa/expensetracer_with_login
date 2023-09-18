@@ -1,7 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import Styles from "./Styles.module.css";
 import {Link} from "react-router-dom"
+import { Login_create_context } from "../../Context";
+
 function Main() {
+  const Login_context=useContext(Login_create_context)
+
+  console.log(Login_context,"Login_context..................################################")
   return (
     <div className={Styles.Main_div}>
    
@@ -28,7 +33,8 @@ function Main() {
       <div className={Styles.footer_nav}>
         <ul>
         <li onClick={()=>{alert(`width-${window.innerWidth} || height ${window.innerHeight}`)}}>Setting</li>
-          <li >Logout</li>
+        <Link to="/"><li onClick={Login_context.LogoutHAndler}>Logout</li></Link>
+          
         </ul>
         
       </div> 
